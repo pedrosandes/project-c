@@ -7,7 +7,8 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -21,9 +22,13 @@
     "import",
     "react",
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "react-hooks"
+
   ],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",
     "indent": [
         "error",
